@@ -14,6 +14,7 @@ WScript.Sleep 5000
 WScript.Sleep 5000
 
 Do
+ End If Time() > TimeValue("3:30am")
  WshShell.SendKeys "rpg " & sInput
  WshShell.SendKeys "{ENTER}"
  WScript.Sleep sTime
