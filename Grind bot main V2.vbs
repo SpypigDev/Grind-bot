@@ -5,6 +5,7 @@ sInput = InputBox("Enter what you grinding for")
 sTime = InputBox("Whats the cooldown time? (In Min)")
 
 sTime = sTime * "60000"
+sTime = sTime + "1000"
 val = 0
 var = "5000"
 WScript.Sleep 5000
