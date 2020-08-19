@@ -19,7 +19,6 @@ Do
 .Run "nircmd setcursor 129 14", 0, True
 .Run "nircmd sendmouse left click", 0, True
 End With
-WScript.Sleep 100
 WScript.Sleep 500
   WshShell.SendKeys "Imitating asleep human (buffering)"
   WshShell.SendKeys "{ENTER}"
