@@ -11,10 +11,11 @@ WScript.Sleep 10000
  WshShell.SendKeys "Grind bot online.."
  WshShell.SendKeys "{ENTER}"
 WScript.Sleep 10000
+clock = 0
 
 Do
-  if clock >= "3,600,000" then
-  Do Until myNum = 6
+if clock >= "3,600,000" then
+  Do Until myNum >= 6
   With CreateObject("WScript.Shell")
 .Run "nircmd setcursor 129 14", 0, True
 .Run "nircmd sendmouse left click", 0, True
@@ -34,7 +35,7 @@ WScript.Sleep 300000
 myNum = myNum + 1
 Loop
 
-  Else
+Else
 
 
   With CreateObject("WScript.Shell")
@@ -129,6 +130,6 @@ WshShell.SendKeys  "Buffering"
 WshShell.SendKeys "{ENTER}"
 WScript.Sleep 10000
 
-  clock = clock + sTime + sTime + sTime
+clock = clock + sTime + sTime + sTime
   End If
   Loop
