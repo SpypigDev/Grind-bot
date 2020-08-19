@@ -12,9 +12,9 @@ WScript.Sleep 1000
  WshShell.SendKeys "{ENTER}"
 WScript.Sleep 1000
 clock = 0
-addtime = 3600000
-quarter = clock / "4"
+addtime =  1800000
 clock = clock + sTime + sTime + sTime
+quarter = clock / "4"
 
 Do
 if myNum = 6 then
