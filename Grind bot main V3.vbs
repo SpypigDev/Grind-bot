@@ -14,7 +14,7 @@ WScript.Sleep 10000
 clock = 0
 
 Do
-if clock >= "3,600,000" then
+if clock >= "3600000" then
   Do Until myNum >= 6
   With CreateObject("WScript.Shell")
 .Run "nircmd setcursor 129 14", 0, True
