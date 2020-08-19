@@ -12,67 +12,105 @@ WScript.Sleep 5000
  WshShell.SendKeys "{ENTER}"
 WScript.Sleep 5000
 
-intAnswer = _
-    Msgbox("Are you running grind bot over night?", _
-        vbYesNo, "Yes")
-        WScript.Sleep 5000
-If intAnswer = vbYes Then
+Do
   if clock >= "3,600,000" then
+  Do Until myNum = 6
+  With CreateObject("WScript.Shell")
+.Run "nircmd setcursor 129 14", 0, True
+.Run "nircmd sendmouse left click", 0, True
+End With
   WshShell.SendKeys "Imitating asleep human (buffering)"
   WshShell.SendKeys "{ENTER}"
-  WScript.Sleep 300000
-  WshShell.SendKeys "Imitating asleep human (buffering)"
-  WshShell.SendKeys "{ENTER}"
-  WScript.Sleep 300000
-  WshShell.SendKeys "Imitating asleep human (buffering)"
-  WshShell.SendKeys "{ENTER}"
-  WScript.Sleep 300000
-  WshShell.SendKeys "Imitating asleep human (buffering)"
-  WshShell.SendKeys "{ENTER}"
-  WScript.Sleep 300000
-  WshShell.SendKeys "Imitating asleep human (buffering)"
-  WshShell.SendKeys "{ENTER}"
-  WScript.Sleep 300000
-  WshShell.SendKeys "Imitating asleep human (buffering)"
-  WshShell.SendKeys "{ENTER}"
-  WScript.Sleep 300000
+  With CreateObject("WScript.Shell")
+.Run "nircmd setcursor 320 10", 0, True
+.Run "nircmd sendmouse left click", 0, True
+End With
+WshShell.SendKeys "Imitating asleep human (buffering)"
+WshShell.SendKeys "{ENTER}"
+WScript.Sleep 300000
+myNum = myNum + 1
+Loop
 
   Else
-  Do
-  WshShell.SendKeys "rpg " & sInput
+
+
+  With CreateObject("WScript.Shell")
+.Run "nircmd setcursor 129 14", 0, True
+.Run "nircmd sendmouse left click", 0, True
+End With
+  WshShell.SendKeys  "rpg " & sInput
   WshShell.SendKeys "{ENTER}"
-  WScript.Sleep sTime
-  WshShell.SendKeys "rpg " & sInput
-  WshShell.SendKeys "{ENTER}"
-  WScript.Sleep sTime
-  WshShell.SendKeys "rpg " & sInput
-  WshShell.SendKeys "{ENTER}"
-  WScript.Sleep sTime
-  WshShell.SendKeys "Imitating asleep human"
-  WshShell.SendKeys "{ENTER}"
-  WScript.Sleep 10000
-  WshShell.SendKeys "buffering"
-  WshShell.SendKeys "{ENTER}"
-  WScript.Sleep 10000
+  With CreateObject("WScript.Shell")
+.Run "nircmd setcursor 320 10", 0, True
+.Run "nircmd sendmouse left click", 0, True
+End With
+WshShell.SendKeys  "rpg " & sInput
+WshShell.SendKeys "{ENTER}"
+WScript.Sleep sTime
+
+
+With CreateObject("WScript.Shell")
+.Run "nircmd setcursor 129 14", 0, True
+.Run "nircmd sendmouse left click", 0, True
+End With
+WshShell.SendKeys  "rpg " & sInput
+WshShell.SendKeys "{ENTER}"
+With CreateObject("WScript.Shell")
+.Run "nircmd setcursor 320 10", 0, True
+.Run "nircmd sendmouse left click", 0, True
+End With
+WshShell.SendKeys  "rpg " & sInput
+WshShell.SendKeys "{ENTER}"
+WScript.Sleep sTime
+
+
+With CreateObject("WScript.Shell")
+.Run "nircmd setcursor 129 14", 0, True
+.Run "nircmd sendmouse left click", 0, True
+End With
+WshShell.SendKeys  "rpg " & sInput
+WshShell.SendKeys "{ENTER}"
+With CreateObject("WScript.Shell")
+.Run "nircmd setcursor 320 10", 0, True
+.Run "nircmd sendmouse left click", 0, True
+End With
+WshShell.SendKeys  "rpg " & sInput
+WshShell.SendKeys "{ENTER}"
+WScript.Sleep sTime
+
+
+
+
+
+With CreateObject("WScript.Shell")
+.Run "nircmd setcursor 129 14", 0, True
+.Run "nircmd sendmouse left click", 0, True
+End With
+WshShell.SendKeys  "Imitating human"
+WshShell.SendKeys "{ENTER}"
+With CreateObject("WScript.Shell")
+.Run "nircmd setcursor 320 10", 0, True
+.Run "nircmd sendmouse left click", 0, True
+End With
+WshShell.SendKeys  "Imitating human"
+WshShell.SendKeys "{ENTER}"
+WScript.Sleep 10000
+
+
+With CreateObject("WScript.Shell")
+.Run "nircmd setcursor 129 14", 0, True
+.Run "nircmd sendmouse left click", 0, True
+End With
+WshShell.SendKeys  "Buffering"
+WshShell.SendKeys "{ENTER}"
+With CreateObject("WScript.Shell")
+.Run "nircmd setcursor 320 10", 0, True
+.Run "nircmd sendmouse left click", 0, True
+End With
+WshShell.SendKeys  "Buffering"
+WshShell.SendKeys "{ENTER}"
+WScript.Sleep 10000
+
   clock = clock + sTime + sTime + sTime
-  Loop
   End If
-Else
-Do
- WshShell.SendKeys "rpg " & sInput
- WshShell.SendKeys "{ENTER}"
- WScript.Sleep sTime
- WshShell.SendKeys "rpg " & sInput
- WshShell.SendKeys "{ENTER}"
- WScript.Sleep sTime
- WshShell.SendKeys "rpg " & sInput
- WshShell.SendKeys "{ENTER}"
- WScript.Sleep sTime
-WshShell.SendKeys "Imitating human"
- WshShell.SendKeys "{ENTER}"
- WScript.Sleep 10000
-WshShell.SendKeys "buffering"
- WshShell.SendKeys "{ENTER}"
- WScript.Sleep 10000
-Loop
-End If
+  Loop
