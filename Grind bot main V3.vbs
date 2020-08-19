@@ -6,11 +6,11 @@ sTime = InputBox("Whats the cooldown time? (In Min)")
 sTime = sTime * "60000"
 sTime = sTime + "1000"
 val = 0
-var = "5000"
-WScript.Sleep 5000
+var = "10000"
+WScript.Sleep 10000
  WshShell.SendKeys "Grind bot online.."
  WshShell.SendKeys "{ENTER}"
-WScript.Sleep 5000
+WScript.Sleep 10000
 
 Do
   if clock >= "3,600,000" then
@@ -19,15 +19,15 @@ Do
 .Run "nircmd setcursor 129 14", 0, True
 .Run "nircmd sendmouse left click", 0, True
 End With
-WScript.Sleep 500
+WScript.Sleep 1000
   WshShell.SendKeys "Imitating asleep human (buffering)"
   WshShell.SendKeys "{ENTER}"
   With CreateObject("WScript.Shell")
-  WScript.Sleep 500
+  WScript.Sleep 1000
 .Run "nircmd setcursor 320 10", 0, True
 .Run "nircmd sendmouse left click", 0, True
 End With
-WScript.Sleep 500
+WScript.Sleep 1000
 WshShell.SendKeys "Imitating asleep human (buffering)"
 WshShell.SendKeys "{ENTER}"
 WScript.Sleep 300000
@@ -41,15 +41,15 @@ Loop
 .Run "nircmd setcursor 129 14", 0, True
 .Run "nircmd sendmouse left click", 0, True
 End With
-WScript.Sleep 500
+WScript.Sleep 1000
   WshShell.SendKeys  "rpg " & sInput
   WshShell.SendKeys "{ENTER}"
-  WScript.Sleep 500
+  WScript.Sleep 1000
   With CreateObject("WScript.Shell")
 .Run "nircmd setcursor 320 10", 0, True
 .Run "nircmd sendmouse left click", 0, True
 End With
-WScript.Sleep 500
+WScript.Sleep 1000
 WshShell.SendKeys  "rpg " & sInput
 WshShell.SendKeys "{ENTER}"
 WScript.Sleep sTime
@@ -59,15 +59,15 @@ With CreateObject("WScript.Shell")
 .Run "nircmd setcursor 129 14", 0, True
 .Run "nircmd sendmouse left click", 0, True
 End With
-WScript.Sleep 500
+WScript.Sleep 1000
 WshShell.SendKeys  "rpg " & sInput
 WshShell.SendKeys "{ENTER}"
 With CreateObject("WScript.Shell")
-WScript.Sleep 500
+WScript.Sleep 1000
 .Run "nircmd setcursor 320 10", 0, True
 .Run "nircmd sendmouse left click", 0, True
 End With
-WScript.Sleep 500
+WScript.Sleep 1000
 WshShell.SendKeys  "rpg " & sInput
 WshShell.SendKeys "{ENTER}"
 WScript.Sleep sTime
@@ -77,14 +77,14 @@ With CreateObject("WScript.Shell")
 .Run "nircmd setcursor 129 14", 0, True
 .Run "nircmd sendmouse left click", 0, True
 End With
-WScript.Sleep 500
+WScript.Sleep 1000
 WshShell.SendKeys  "rpg " & sInput
 WshShell.SendKeys "{ENTER}"
-WScript.Sleep 500
+WScript.Sleep 1000
 With CreateObject("WScript.Shell")
 .Run "nircmd setcursor 320 10", 0, True
 .Run "nircmd sendmouse left click", 0, True
-WScript.Sleep 500
+WScript.Sleep 1000
 End With
 WshShell.SendKeys  "rpg " & sInput
 WshShell.SendKeys "{ENTER}"
@@ -98,15 +98,15 @@ With CreateObject("WScript.Shell")
 .Run "nircmd setcursor 129 14", 0, True
 .Run "nircmd sendmouse left click", 0, True
 End With
-WScript.Sleep 500
+WScript.Sleep 1000
 WshShell.SendKeys  "Imitating human"
 WshShell.SendKeys "{ENTER}"
-WScript.Sleep 500
+WScript.Sleep 1000
 With CreateObject("WScript.Shell")
 .Run "nircmd setcursor 320 10", 0, True
 .Run "nircmd sendmouse left click", 0, True
 End With
-WScript.Sleep 500
+WScript.Sleep 1000
 WshShell.SendKeys  "Imitating human"
 WshShell.SendKeys "{ENTER}"
 WScript.Sleep 10000
@@ -116,15 +116,15 @@ With CreateObject("WScript.Shell")
 .Run "nircmd setcursor 129 14", 0, True
 .Run "nircmd sendmouse left click", 0, True
 End With
-WScript.Sleep 500
+WScript.Sleep 1000
 WshShell.SendKeys  "Buffering"
 WshShell.SendKeys "{ENTER}"
-WScript.Sleep 500
+WScript.Sleep 1000
 With CreateObject("WScript.Shell")
 .Run "nircmd setcursor 320 10", 0, True
 .Run "nircmd sendmouse left click", 0, True
 End With
-WScript.Sleep 500
+WScript.Sleep 1000
 WshShell.SendKeys  "Buffering"
 WshShell.SendKeys "{ENTER}"
 WScript.Sleep 10000
