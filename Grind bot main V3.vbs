@@ -12,7 +12,7 @@ WScript.Sleep 1000
  WshShell.SendKeys "{ENTER}"
 WScript.Sleep 1000
 clock = 0
-addtime =  1800000
+addtime =  3600000
 clock = clock + sTime + sTime + sTime
 quarter = clock / "4"
 
