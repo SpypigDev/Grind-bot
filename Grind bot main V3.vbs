@@ -22,13 +22,13 @@ if myNum = 6 then
   End If
 
 if clock >= addtime then
-  Do Until myNum >= 6
+  Do 
   With CreateObject("WScript.Shell")
 .Run "nircmd setcursor 129 14", 0, True
 .Run "nircmd sendmouse left click", 0, True
 End With
 WScript.Sleep 1000
-  WshShell.SendKeys clock
+  WshShell.SendKeys "rpg jail"
   WshShell.SendKeys "{ENTER}"
   With CreateObject("WScript.Shell")
   WScript.Sleep 10000
@@ -36,10 +36,63 @@ WScript.Sleep 1000
 .Run "nircmd sendmouse left click", 0, True
 End With
 WScript.Sleep 1000
-WshShell.SendKeys "Imitating asleep human (buffering)"
+WshShell.SendKeys "rpg jail"
 WshShell.SendKeys "{ENTER}"
 WScript.Sleep 300000
-myNum = myNum + 1
+
+
+With CreateObject("WScript.Shell")
+.Run "nircmd setcursor 129 14", 0, True
+.Run "nircmd sendmouse left click", 0, True
+End With
+WScript.Sleep 1000
+WshShell.SendKeys "protest"
+WshShell.SendKeys "{ENTER}"
+With CreateObject("WScript.Shell")
+WScript.Sleep 10000
+.Run "nircmd setcursor 400 10", 0, True
+.Run "nircmd sendmouse left click", 0, True
+End With
+WScript.Sleep 1000
+WshShell.SendKeys "protest"
+WshShell.SendKeys "{ENTER}"
+WScript.Sleep 30000
+
+
+With CreateObject("WScript.Shell")
+.Run "nircmd setcursor 129 14", 0, True
+.Run "nircmd sendmouse left click", 0, True
+End With
+WScript.Sleep 1000
+WshShell.SendKeys "fish"
+WshShell.SendKeys "{ENTER}"
+With CreateObject("WScript.Shell")
+WScript.Sleep 10000
+.Run "nircmd setcursor 400 10", 0, True
+.Run "nircmd sendmouse left click", 0, True
+End With
+WScript.Sleep 1000
+WshShell.SendKeys "fish"
+WshShell.SendKeys "{ENTER}"
+WScript.Sleep 30000
+
+
+With CreateObject("WScript.Shell")
+.Run "nircmd setcursor 129 14", 0, True
+.Run "nircmd sendmouse left click", 0, True
+End With
+WScript.Sleep 1000
+WshShell.SendKeys "potion"
+WshShell.SendKeys "{ENTER}"
+With CreateObject("WScript.Shell")
+WScript.Sleep 10000
+.Run "nircmd setcursor 400 10", 0, True
+.Run "nircmd sendmouse left click", 0, True
+End With
+WScript.Sleep 1000
+WshShell.SendKeys "potion"
+WshShell.SendKeys "{ENTER}"
+WScript.Sleep 300000
 Loop
 
 Else
