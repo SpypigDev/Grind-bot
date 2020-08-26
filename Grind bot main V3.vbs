@@ -10,7 +10,7 @@ WScript.Sleep 5000
 WScript.Sleep 5000
 
 Do
- WshShell.SendKeys !d bump
+ WshShell.SendKeys "!d bump"
  WshShell.SendKeys "{ENTER}"
  WScript.Sleep sTime
 Loop
